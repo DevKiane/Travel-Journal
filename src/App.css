@@ -1,0 +1,104 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  background-color: rgb(232, 226, 226);
+  font-family: "Inter", sans-serif;
+}
+
+.app--container {
+  width: 550px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header--container {
+  background-color: #f55a5a;
+  height: 55px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.84rem;
+  color: azure;
+  font-weight: 250;
+  letter-spacing: -1.2px;
+}
+
+.cards--container {
+  padding: 40px;
+  padding-top: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card--container {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card--image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+}
+
+.card--image {
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+}
+
+.card--content {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card--content--header {
+  display: flex;
+  gap: 10px;
+}
+
+.card--container p {
+  overflow: hidden;
+  max-height: 50.67px; /* Adjust as needed */
+  opacity: 0.8;
+}
+
+.read-more {
+  cursor: pointer;
+  color: #f55a5a;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  cursor: pointer;
+  color: #f55a5a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .cards--container {
+    padding: 70px; /* Adjust padding for smaller screens */
+    padding-top: 15px;
+  }
+
+  .card--container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
